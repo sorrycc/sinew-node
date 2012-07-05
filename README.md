@@ -2,7 +2,7 @@
 
 Sinew-Node collects structured data from web sites (screen scraping).
 
-Sinew is distributed as a npm package:
+Sinew-Node is distributed as a npm package:
 
 ```node
 npm install sinew-node

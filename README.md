@@ -17,7 +17,7 @@ Here's an example for collecting Reddit's topic list:
 var sinew = require('sinew-node');
 sinew.get('http://www.reddit.com/r/javascript/', function() {
   this.$('#siteTable div.thing a.title').each(function(index) {
-    console.log(this.innerHTML)
+    console.log(this.innerHTML);
   });
 });
 ```

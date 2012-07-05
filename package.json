@@ -1,0 +1,33 @@
+{
+  "name"       : "sinew-node",
+  "description": "Sinew-Node collects structured data from web sites (screen scraping).",
+  "version"    : "0.1.0",
+  "author"     : "ChenCheng <sorrycc@gmailcom>",
+  "homepage"   : "https://github.com/sorrycc/sinew-node",
+  "main"       : "lib/sinew-node",
+  "scripts": {
+    "build": "_coffee -c lib/",
+    "clean": "rm lib/*.js",
+    "postinstall": "npm run build",
+    "test": "coffee test"
+  },
+  "devDependencies": {
+  },
+  "dependencies": {
+    "coffee-script": "~1.3.1",
+    "request": "~2.9.203",
+    "jsdom": "~0.2.14",
+    "underscore": "~1.3.3"
+  },
+  "keywords": [
+    "sinew", "spider", "cache"
+  ],
+  "licenses": [{
+    "type": "Apache License, Version 2.0",
+    "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+  }],
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/sorrycc/sinew-node.git"
+  }
+}

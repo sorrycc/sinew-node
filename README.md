@@ -12,11 +12,22 @@ npm install sinew-node
 
 Here's an example for collecting Reddit's topic list:
 
+```javascript
+// JavaScript
+var sinew = require('sinew-node');
+sinew.get('http://www.reddit.com/r/javascript/', function() {
+  this.$('#siteTable div.thing a.title').each(function(index) {
+    console.log(this.innerHTML)
+  });
+});
+```
+
 ```coffeescript
+# CoffeeScript
 sinew = require 'sinew-node'
 sinew.get 'http://www.reddit.com/r/javascript/', ->
-  (@$ '#siteTable div.thing a.title').each (index)->
-    console.log @innerHTML if index < 5
+  (@$ '#siteTable div.thing a.title').each (index) ->
+    console.log @innerHTML
 ```
 
 ## Features

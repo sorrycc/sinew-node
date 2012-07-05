@@ -13,7 +13,7 @@ npm install sinew-node
 Here's an example for collecting Reddit's topic list:
 
 ```coffeescript
-sinew = require '../lib/sinew-node'
+sinew = require 'sinew-node'
 sinew.get 'http://www.reddit.com/r/javascript/', ->
   (@$ '#siteTable div.thing a.title').each (index)->
     console.log @innerHTML if index < 5

@@ -8,5 +8,3 @@ sinew = require '../lib/sinew-node'
 sinew.get 'http://www.reddit.com/r/javascript/', ->
   (@$ '#siteTable div.thing a.title').each (index)->
     console.log @innerHTML if index < 5
-
-
